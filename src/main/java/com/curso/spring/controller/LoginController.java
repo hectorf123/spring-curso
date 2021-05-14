@@ -49,7 +49,7 @@ public class LoginController {
 		Usuario usuario = usuarioRepository.consultarUsuario(loginRequest.getUsuario());
 		String contrasenaBaseDatos = usuario.getPassword();
 		Boolean contrasenaCoindice;
-
+System.out.println("hello world");
 		System.out.println(usuario.getCorreoElectronico());
 		if (usuario.getUsuario() == null) {
 			return ResponseEntity.ok(new ResponseCodes(1, "Usuario  incorrecta"));
