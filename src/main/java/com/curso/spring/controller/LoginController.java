@@ -50,6 +50,8 @@ public class LoginController {
 		String contrasenaBaseDatos = usuario.getPassword();
 		Boolean contrasenaCoindice;
 
+		
+		System.out.println("CAmbio prueba repositorio");
 		System.out.println(usuario.getCorreoElectronico());
 		if (usuario.getUsuario() == null) {
 			return ResponseEntity.ok(new ResponseCodes(1, "Usuario  incorrecta"));
